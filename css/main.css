@@ -1,0 +1,36 @@
+#left-eye {
+  transform-origin: bottom;
+  animation: look 1.5s infinite alternate;
+}
+
+#right-eye {
+  transform-origin: bottom;
+  animation: look 1.5s infinite alternate;
+}
+
+@keyframes look {
+
+  from {
+    transform: translate(10px);
+  }
+
+  to {
+    transform: translate(-10px);
+  }
+}
+
+#left-ear {
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear {
+  transform: translate(0, -10px);
+}
+
+#bear:hover #right-ear {
+  transform: translate(0, -10px);
+}
